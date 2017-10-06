@@ -1,0 +1,39 @@
+html,body { margin: 0; padding: 0; }
+body { 
+    background: #f2f3f5; 
+    font-family: 'Arial', sans-serif; 
+    font-size: 0.75rem; 
+    line-height: 1.5; }
+hr { border: none; border-top: 1px solid #f2f3f5; }
+p, a { color: #9d9d9d; margin: 0; }
+
+span { padding: 0px 5px; }
+.header { 
+	height: 30px; 
+	background: #ffffff;
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+	padding: 15px;
+	margin-bottom: 30px;
+}
+.container { 
+	max-width: 900px; 
+	width: 100%;
+    margin: 15px auto; }
+.card {
+	padding: 15px;
+    margin: 15px 15px;
+	border-radius: 3px;
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+	background: #ffffff; }
+a.title { 
+	text-decoration: none; 
+	font-weight: 600; 
+	font-size: 16px; 
+	color: #758492; 
+	margin: 0; }
+.thumbnail { float: left; overflow: hidden; margin: 0px 15px 0px 0px; }
+.thumbnail img {
+	width: 60px;
+	height: 60px;
+}
+.post { overflow: hidden; }
