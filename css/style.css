@@ -1,4 +1,17 @@
 html,body { margin: 0; padding: 0; }
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+a {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects; }
+a:active,
+a:hover { outline-width: 0; }
 body { 
     background: #f2f3f5; 
     font-family: 'Arial', sans-serif; 
@@ -9,11 +22,12 @@ p, a { color: #9d9d9d; margin: 0; }
 
 span { padding: 0px 5px; }
 .header { 
-	height: 30px; 
+	height: 60px; 
 	background: #ffffff;
 	box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
-	padding: 15px;
-	margin-bottom: 30px;
+	margin-bottom: 15px; }
+@media(max-width: 800px) {
+	header { height: 30px;}
 }
 .container { 
 	max-width: 900px; 
@@ -37,3 +51,42 @@ a.title {
 	height: 60px;
 }
 .post { overflow: hidden; }
+#load { 	
+	width: 60px;
+	margin: 30px auto 60px auto;
+	height: 60px;
+	background-size: contain;
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCAyNi4zNDkgMjYuMzUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI2LjM0OSAyNi4zNTsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxnPjxjaXJjbGUgY3g9IjEzLjc5MiIgY3k9IjMuMDgyIiByPSIzLjA4MiIgZmlsbD0iI2Q3ZDdkNyIvPjxjaXJjbGUgY3g9IjEzLjc5MiIgY3k9IjI0LjUwMSIgcj0iMS44NDkiIGZpbGw9IiNkN2Q3ZDciLz48Y2lyY2xlIGN4PSI2LjIxOSIgY3k9IjYuMjE4IiByPSIyLjc3NCIgZmlsbD0iI2Q3ZDdkNyIvPjxjaXJjbGUgY3g9IjIxLjM2NSIgY3k9IjIxLjM2MyIgcj0iMS41NDEiIGZpbGw9IiNkN2Q3ZDciLz48Y2lyY2xlIGN4PSIzLjA4MiIgY3k9IjEzLjc5MiIgcj0iMi40NjUiIGZpbGw9IiNkN2Q3ZDciLz48Y2lyY2xlIGN4PSIyNC41MDEiIGN5PSIxMy43OTEiIHI9IjEuMjMyIiBmaWxsPSIjZDdkN2Q3Ii8+PHBhdGggZD0iTTQuNjk0LDE5Ljg0Yy0wLjg0MywwLjg0My0wLjg0MywyLjIwNywwLDMuMDVjMC44NDIsMC44NDMsMi4yMDgsMC44NDMsMy4wNSwwYzAuODQzLTAuODQzLDAuODQzLTIuMjA3LDAtMy4wNSAgICBDNi45MDIsMTguOTk2LDUuNTM3LDE4Ljk4OCw0LjY5NCwxOS44NHoiIGZpbGw9IiNkN2Q3ZDciLz48Y2lyY2xlIGN4PSIyMS4zNjQiIGN5PSI2LjIxOCIgcj0iMC45MjQiIGZpbGw9IiNkN2Q3ZDciLz48L2c+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjwvc3ZnPg==);
+	-webkit-animation-name: spin;
+	-webkit-animation-duration: 4000ms;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	-moz-animation-name: spin;
+	-moz-animation-duration: 4000ms;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: linear;
+	-ms-animation-name: spin;
+	-ms-animation-duration: 4000ms;
+	-ms-animation-iteration-count: infinite;
+	-ms-animation-timing-function: linear;
+	animation-name: spin;
+	animation-duration: 4000ms;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	}
+	@-ms-keyframes spin {
+		from { -ms-transform: rotate(0deg); }
+		to { -ms-transform: rotate(360deg); }
+	}
+	@-moz-keyframes spin {
+		from { -moz-transform: rotate(0deg); }
+		to { -moz-transform: rotate(360deg); }
+	}
+	@-webkit-keyframes spin {
+		from { -webkit-transform: rotate(0deg); }
+		to { -webkit-transform: rotate(360deg); }
+	}
+	@keyframes spin {
+		from { transform:rotate(0deg); }
+		to { transform:rotate(360deg); }
+	}
