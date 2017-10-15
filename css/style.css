@@ -24,17 +24,23 @@ span { padding: 0px 5px; }
 .container { 
 	max-width: 900px; 
 	width: 100%;
-    margin: 15px auto; }
+    margin: 85px auto 15px auto; }
+@media(max-width: 800px) {
+	.container { margin: 60px auto 15px auto; }
+}
 .header { 
 	height: auto; 
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 	background: #FF4500;
-	box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
-	margin-bottom: 15px; }
-@media(max-width: 800px) {
-	header { height: 30px;}
-}
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.1); }
 .header .container { max-width: 1200px; margin: 0px auto; }
-.header svg { width: 120px; height: auto; margin: 15px 0px 15px 15px; }
+	.header svg { width: 120px; height: 38px; margin: 15px 0px 15px 15px; }
+@media(max-width: 800px) {
+	.header svg { width: 90px; margin: 10px 0px 10px 15px; }
+}
 .header svg .st0{fill:#ffffff;}
 .header svg .st1{fill:#FF4500;}
 .card {
