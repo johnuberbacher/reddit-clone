@@ -14,47 +14,54 @@ a:active,
 a:hover { outline-width: 0; }
 body { 
     background: #f2f3f5; 
-    font-family: 'Arial', sans-serif; 
-    font-size: 0.75rem; 
+	font-family: 'Open Sans', sans-serif;
+    font-size: 12px; 
     line-height: 1.5; }
 hr { border: none; border-top: 1px solid #f2f3f5; }
-p, a { color: #9d9d9d; margin: 0; }
+p, a { color: #9d9d9d; margin: 0; text-decoration: none; }
 
 span { padding: 0px 5px; }
+.container { 
+	max-width: 900px; 
+	width: 100%;
+    margin: 15px auto; }
 .header { 
-	height: 60px; 
-	background: #ffffff;
+	height: auto; 
+	background: #FF4500;
 	box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
 	margin-bottom: 15px; }
 @media(max-width: 800px) {
 	header { height: 30px;}
 }
-.container { 
-	max-width: 900px; 
-	width: 100%;
-    margin: 15px auto; }
+.header .container { max-width: 1200px; margin: 0px auto; }
+.header svg { width: 120px; height: auto; margin: 15px 0px 15px 15px; }
+.header svg .st0{fill:#ffffff;}
+.header svg .st1{fill:#FF4500;}
 .card {
 	padding: 15px;
-    margin: 15px 15px;
-	border-radius: 3px;
-	box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+    margin: 0px;
+	border-radius: 4px;
+	border-bottom: 1px solid #f3f3f5;
 	background: #ffffff; }
+.card:hover {
+	background: #f9f9f8;
+}
 a.title { 
-	text-decoration: none; 
-	font-weight: 600; 
-	font-size: 16px; 
+	font-weight: 700; 
+	font-size: 15px; 
 	color: #758492; 
 	margin: 0; }
+a.author, a.subreddit { font-weight: 700; color: #758492; }
 .thumbnail { float: left; overflow: hidden; margin: 0px 15px 0px 0px; }
 .thumbnail img {
 	width: 60px;
 	height: 60px;
-}
+	border-radius: 3px; }
 .post { overflow: hidden; }
 #load { 	
-	width: 60px;
-	margin: 30px auto 60px auto;
-	height: 60px;
+	width: 40px;
+	margin: 60px auto 60px auto;
+	height: 40px;
 	background-size: contain;
 	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCAyNi4zNDkgMjYuMzUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI2LjM0OSAyNi4zNTsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxnPjxjaXJjbGUgY3g9IjEzLjc5MiIgY3k9IjMuMDgyIiByPSIzLjA4MiIgZmlsbD0iI2Q3ZDdkNyIvPjxjaXJjbGUgY3g9IjEzLjc5MiIgY3k9IjI0LjUwMSIgcj0iMS44NDkiIGZpbGw9IiNkN2Q3ZDciLz48Y2lyY2xlIGN4PSI2LjIxOSIgY3k9IjYuMjE4IiByPSIyLjc3NCIgZmlsbD0iI2Q3ZDdkNyIvPjxjaXJjbGUgY3g9IjIxLjM2NSIgY3k9IjIxLjM2MyIgcj0iMS41NDEiIGZpbGw9IiNkN2Q3ZDciLz48Y2lyY2xlIGN4PSIzLjA4MiIgY3k9IjEzLjc5MiIgcj0iMi40NjUiIGZpbGw9IiNkN2Q3ZDciLz48Y2lyY2xlIGN4PSIyNC41MDEiIGN5PSIxMy43OTEiIHI9IjEuMjMyIiBmaWxsPSIjZDdkN2Q3Ii8+PHBhdGggZD0iTTQuNjk0LDE5Ljg0Yy0wLjg0MywwLjg0My0wLjg0MywyLjIwNywwLDMuMDVjMC44NDIsMC44NDMsMi4yMDgsMC44NDMsMy4wNSwwYzAuODQzLTAuODQzLDAuODQzLTIuMjA3LDAtMy4wNSAgICBDNi45MDIsMTguOTk2LDUuNTM3LDE4Ljk4OCw0LjY5NCwxOS44NHoiIGZpbGw9IiNkN2Q3ZDciLz48Y2lyY2xlIGN4PSIyMS4zNjQiIGN5PSI2LjIxOCIgcj0iMC45MjQiIGZpbGw9IiNkN2Q3ZDciLz48L2c+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjwvc3ZnPg==);
 	-webkit-animation-name: spin;
