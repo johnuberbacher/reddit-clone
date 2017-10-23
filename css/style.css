@@ -37,9 +37,9 @@ span { padding: 0px 5px; }
 	background: #FF4500;
 	box-shadow: 0px 1px 1px rgba(0,0,0,0.1); }
 .header .container { max-width: 1200px; margin: 0px auto; }
-	.header svg { width: 120px; height: 38px; margin: 15px 0px 15px 15px; }
+	.header img { width: 111px; height: 38px; margin: 15px 0px 15px 15px; }
 @media(max-width: 800px) {
-	.header svg { width: 90px; margin: 10px 0px 10px 15px; }
+	.header img { width: 90px; height: 31px; margin: 10px 0px 10px 15px; }
 }
 .header svg .st0{fill:#ffffff;}
 .header svg .st1{fill:#FF4500;}
@@ -121,16 +121,17 @@ a.author, a.subreddit { font-weight: 700; color: #758492; }
   opacity:1;
   transition: visibility 0.0s, opacity 0.3s; }
 .modal-overlay { 
-  margin: 100px auto;
-  padding: 20px;
+  margin: 0px auto;
+  padding: 0px;
   background: #fff;
   border: 1px solid #666;
-  width: 100%;
-  height: auto;
-  max-width: 870px;
-  border-radius: 4px;
+  border-radius: 6px;
+  display: inline-block;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-  position: relative; }
-.modal-overlay img { width: 100%; height: auto; }
-.modal iframe { top: 0; left: 0; bottom: 0; right: 0; position: absolute; border: none; }
-.modal iframe img { width: 100%; height: auto; }
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  position: fixed; }
+.modal-overlay img { width: auto; height: 100%; max-height: 70vh; border-radius: 4px; }
+.modal iframe { width: 100%; height: 100%; max-height: 70vh; border-radius: 4px;  }
